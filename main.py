@@ -19,7 +19,7 @@ write_key() # this creates the folder for our encryption key
 key = load_key() # loads the key for our encrypted function
 
 f = fernet(key)
-message = input('Paste data to encrypt.').encode() # this encode method uses UTF-8 by default.
+message = input('Paste data to encrypt.').encode() # this encodes our message in UTF-8.
 
 encrypted = f.encrypt(message) # this encrypts the message to be decrypted later.
 
